@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>list tasks</title>
+</head>
+<body>
+  <ul>
+    <% @tasks.each do |task| %>
+    <li>
+      <%= link_to task.title, task_path(task) %>
+      <%= task.title %>
+
+      </li>
+
+  <% end %>
+</ul>
+
+</body>
+</html>
+
+
